@@ -1,7 +1,6 @@
 from random import randint
 
-import oldmax
-
+from day1 import oldmax
 
 users = [
 	{

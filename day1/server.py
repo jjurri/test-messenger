@@ -6,14 +6,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Welcome to Python messenger"
+    return "Hello, World! Karmapa Chenno"
 
 
 @app.route("/status")
 def status():
     return {
-        'status': True,
-        'time': ctime()
+        'status' : True,
+        'time' : ctime()
     }
 
 app.run()
