@@ -1,4 +1,5 @@
 from flask import Flask
+from time import ctime
 
 app = Flask(__name__)
 
@@ -10,5 +11,9 @@ def hello():
 
 @app.route("/status")
 def status():
-    return "I'm alive"
+    return {
+        'status' : True,
+        'time' : ctime()
+    }
+
 app.run()
