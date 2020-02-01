@@ -23,7 +23,9 @@ def hello_view():
 def status_view():
     return {
         'status': True,
-        'time': ctime()
+        'time': ctime(),
+        'messages_count': len(messages),
+        'user_count': len(users)
     }
 
 @app.route("/messages")
