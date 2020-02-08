@@ -16,4 +16,4 @@ while True:
 
 		last_time = message["time"]
 
-	time.sleep(2)
+	time.sleep(1)

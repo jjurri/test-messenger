@@ -91,5 +91,5 @@ def auth_view():
         return {"ok": True}
     else:
         return {"ok": False}
-
-app.run()
+if __name__ == '__main__':
+    app.run()
